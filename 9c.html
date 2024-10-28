@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button class="btn1">chikka</button>
+<button class="btn2">pukka</button>
+<p class="result"></p>
+<script>
+  const btn1 = document.querySelector('.btn1')
+  const btn2 = document.querySelector('.btn2')
+  btn1.addEventListener('click', function(){
+    document.querySelector('.result').innerHTML = 'Siz tanlandingiz paragrafdagi Chikka'
+  })
+  btn2.addEventListener('click', ()=>{
+    document.querySelector('.result').innerHTML= 'Siz tanladingiz paragrafdagi Pukka'
+  })
+</script>
+</body>
+</html>

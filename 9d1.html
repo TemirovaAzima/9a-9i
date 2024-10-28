@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input placeholder="text" class=" inputName">
+<button class="btn">Submit</button>
+<p class="text"></p>
+<script>
+    const inputTag = document.querySelector('.inputName')
+    const btn = document.querySelector('.btn')
+    btn.addEventListener('click', ()=>{
+        let name = inputTag.value
+        console.log(name)
+        document.querySelector('.text').innerHTML= `You name is: ${name}`
+    })
+</script>
+</body>
+</html>

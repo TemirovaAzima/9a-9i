@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input placeholder="number" class="cost-input">
+<button class="btn">Hisoblash</button>
+<p class="total-cost"></p>
+<p class="total-cost1"></p>
+<script>
+    function calculateTotal() {
+        const inputTag = document.querySelector('.cost-input')
+        const btn = document.querySelector('.btn')
+        btn.addEventListener('click', () => {
+            let cost = parseInt(inputTag.value)
+            // let cost1 = Number(inputTag.value)
+            console.log(cost)
+             // if(cost === parseFloat){
+             //     cost.innerHTML = 'parseInt'
+             // }
+            // if(cost === 7.99){
+            //
+            // }
+            // if (cost< 40  && cost = parseInt('')) {
+            //
+            //
+            //     cost = cost + 10
+            // }
+
+            if (cost< 40) {
+                cost = cost + 10
+            }
+
+            document.querySelector('.total-cost').innerHTML = `$${cost}`
+            document.querySelector('.total-cost1').innerHTML = `$${cost+.99}`
+        })
+
+    }
+    calculateTotal()
+</script>
+</body>
+</html>
